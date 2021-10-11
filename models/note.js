@@ -23,12 +23,12 @@ module.exports = (sequelize, DataTypes) => {
         key: 'id'
       }
     },
-    pictureCardId: {
+    bookId: {
       type: DataTypes.INTEGER,
       onDelete: 'CASCADE',
-      field: 'pictureCardId',
+      field: 'bookId',
       references: {
-        model: 'picture_cards',
+        model: 'books',
         key: 'id'
       }
     },
