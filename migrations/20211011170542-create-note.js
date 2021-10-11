@@ -8,7 +8,26 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      img: {
+      userId: {
+        type: Sequelize.INTEGER,
+        onDelete: 'CASCADE',
+        field: 'userId',
+        references: {
+          model: 'users',
+          key: 'id'
+        }
+      },
+      bookId: {
+        type: Sequelize.INTEGER,
+        onDelete: 'CASCADE',
+        field: 'bookId',
+        references: {
+          model: 'books',
+          key: 'id'
+        }
+      },
+      name: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       createdAt: {
