@@ -61,6 +61,20 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date()
         },
+        {
+          tipName: 'Work on Improving Your Vocabulary',
+          tip: 'Think about it: You’re reading along, and then you run into a word you don’t know. Do you skip it? Do you try to figure it out by context? Do you stop to look it up? Whichever course of action you take, you are slowing your time significantly, if not stopping it all together to go and look up the retarding word.',
+          img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fdesktime.com%2Fblog%2Fcan-reading-make-you-more-productive%2F&psig=AOvVaw2AX6bULC9WBRoyPGrp85no&ust=1634070297934000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKiG3bCYw_MCFQAAAAAdAAAAABAO',
+          createdAt: new Date(),
+          updatedAt: new Date()
+        },
+        {
+          tipName: 'Skim the Main Points FIRST',
+          tip: 'Finally, when you’re in a real time-crunch and need to get something read by yesterday, take a deep breath and calm down. Open the book, and take some time reading over all the main points. Read the table of contents. Read the subtitles. Read the captions under the diagrams. Get an overall feel for the chapter/section/etc..',
+          img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fdesktime.com%2Fblog%2Fcan-reading-make-you-more-productive%2F&psig=AOvVaw2AX6bULC9WBRoyPGrp85no&ust=1634070297934000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKiG3bCYw_MCFQAAAAAdAAAAABAO',
+          createdAt: new Date(),
+          updatedAt: new Date()
+        },
       ],
       {}
     )
