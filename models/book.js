@@ -30,11 +30,11 @@ module.exports = (sequelize, DataTypes) => {
           key: 'id'
         }
       },
-      img: {
+      description: {
         type: DataTypes.STRING,
         allowNull: false
       },
-      description: DataTypes.STRING
+      img: DataTypes.STRING
   }, 
   {
     sequelize,

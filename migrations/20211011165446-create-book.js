@@ -8,6 +8,19 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
+      userId: {
+        type: Sequelize.INTEGER,
+        onDelete: 'CASCADE',
+        field: 'userId',
+        references: {
+          model: 'users',
+          key: 'id'
+        }
+      },
+      description: {
+        allowNull: false,
+        type: Sequelize.STRING
+      },
       img: {
         type: Sequelize.STRING
       },
