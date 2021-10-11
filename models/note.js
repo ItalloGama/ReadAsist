@@ -14,10 +14,32 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Note.init({
-    img: DataTypes.STRING
-  }, {
+    userId: {
+      type: DataTypes.INTEGER,
+      onDelete: 'CASCADE',
+      field: 'userId',
+      references: {
+        model: 'users',
+        key: 'id'
+      }
+    },
+    pictureCardId: {
+      type: DataTypes.INTEGER,
+      onDelete: 'CASCADE',
+      field: 'pictureCardId',
+      references: {
+        model: 'picture_cards',
+        key: 'id'
+      }
+    },
+    note: {
+      type: DataTypes.STRING
+    }
+  }, 
+  {
     sequelize,
     modelName: 'Note',
+    tableName: 'notes'
   });
   return Note;
 };

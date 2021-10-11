@@ -13,11 +13,27 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   };
-  Book.init({
-    img: DataTypes.STRING
-  }, {
+  Book.init(
+    {
+      userId: {
+        type: DataTypes.INTEGER,
+        onDelete: 'CASCADE',
+        field: 'userId',
+        references: {
+          model: 'users',
+          key: 'id'
+        }
+      },
+      img: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      description: DataTypes.STRING
+  }, 
+  {
     sequelize,
     modelName: 'Book',
+    tableName: 'books'
   });
   return Book;
 };
