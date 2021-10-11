@@ -26,6 +26,27 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date()
         },
+        {
+          tipName: 'Use Peripheral Vision.',
+          tip: 'Use the techniques from everything above to view and comprehend several words at one time. Instead of chunking in smaller groups of words, try reading one line at a time. This involves looking at the center of the line, and using your peripheral vision to read the rest of it. Scan the page in this manner and, when you reach the bottom, you will find that you still understood what you read.',
+          img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fdesktime.com%2Fblog%2Fcan-reading-make-you-more-productive%2F&psig=AOvVaw2AX6bULC9WBRoyPGrp85no&ust=1634070297934000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKiG3bCYw_MCFQAAAAAdAAAAABAO',
+          createdAt: new Date(),
+          updatedAt: new Date()
+        },
+        {
+          tipName: 'Use a Timer.',
+          tip: 'Speaking of ‘record time’, now is your chance to test yourself and work on how to increase your reading speed each time you read. Set a timer for one minute, reading normally as the time dwindles down. When the timer goes off, note how many pages you have read.',
+          img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fdesktime.com%2Fblog%2Fcan-reading-make-you-more-productive%2F&psig=AOvVaw2AX6bULC9WBRoyPGrp85no&ust=1634070297934000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKiG3bCYw_MCFQAAAAAdAAAAABAO',
+          createdAt: new Date(),
+          updatedAt: new Date()
+        },
+        {
+          tipName: 'Set a Goal.',
+          tip: 'Holding yourself accountable will better ensure you stick with your reading and your timer tests. Give yourself a goal of a certain number of pages to read each day/week/etc., and stick to it. When you reach it, treat yourself. Incentive never hurt anyone!',
+          img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fdesktime.com%2Fblog%2Fcan-reading-make-you-more-productive%2F&psig=AOvVaw2AX6bULC9WBRoyPGrp85no&ust=1634070297934000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKiG3bCYw_MCFQAAAAAdAAAAABAO',
+          createdAt: new Date(),
+          updatedAt: new Date()
+        },
       ],
       {}
     )
