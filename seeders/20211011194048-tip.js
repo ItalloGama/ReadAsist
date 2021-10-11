@@ -41,8 +41,22 @@ module.exports = {
           updatedAt: new Date()
         },
         {
+          tipName: 'Read MORE!',
+          tip: 'The old adage, “Practice makes perfect,” is actually pretty darn accurate. Any professional, artist, musician, etc. practices their work regularly.',
+          img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fdesktime.com%2Fblog%2Fcan-reading-make-you-more-productive%2F&psig=AOvVaw2AX6bULC9WBRoyPGrp85no&ust=1634070297934000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKiG3bCYw_MCFQAAAAAdAAAAABAO',
+          createdAt: new Date(),
+          updatedAt: new Date()
+        },
+        {
           tipName: 'Set a Goal.',
           tip: 'Holding yourself accountable will better ensure you stick with your reading and your timer tests. Give yourself a goal of a certain number of pages to read each day/week/etc., and stick to it. When you reach it, treat yourself. Incentive never hurt anyone!',
+          img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fdesktime.com%2Fblog%2Fcan-reading-make-you-more-productive%2F&psig=AOvVaw2AX6bULC9WBRoyPGrp85no&ust=1634070297934000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKiG3bCYw_MCFQAAAAAdAAAAABAO',
+          createdAt: new Date(),
+          updatedAt: new Date()
+        },
+        {
+          tipName: 'Use a Marker',
+          tip: 'Do you find your vision slipping and sliding through the page as you read? Not a problem. Simply place an index card below each line, and slip it down as you read. This will ensure you stay at reading one line at a time, rather than flitting your eyes about and taking nothing in.',
           img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fdesktime.com%2Fblog%2Fcan-reading-make-you-more-productive%2F&psig=AOvVaw2AX6bULC9WBRoyPGrp85no&ust=1634070297934000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKiG3bCYw_MCFQAAAAAdAAAAABAO',
           createdAt: new Date(),
           updatedAt: new Date()
