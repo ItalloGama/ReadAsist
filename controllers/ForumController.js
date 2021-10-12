@@ -11,9 +11,7 @@ const GetForum = async (req, res) => {
 
 const CreateForum = async (req, res) => {
   try {
-    const forum = await Forum.create({
-      ...req.body
-    })
+    const forum = await Forum.create({...req.body})
     res.send(forum)
   } catch (error) {
     throw error
@@ -24,7 +22,7 @@ const UpdateForum = async (req, res) => {
   try {
     const forum = await Forum.update(
       { ...req.body },
-      { where: { id: req.params.comment_id }, returning: true }
+      { where: { id: req.params.forum_id }, returning: true }
     )
     res.send(forum)
   } catch (error) {
@@ -34,10 +32,10 @@ const UpdateForum = async (req, res) => {
 
 const DeleteForumPost = async (req, res) => {
   try {
-    await Forum.destroy({ where: { id: req.params.comment_id } })
+    await Forum.destroy({ where: { id: req.params.forum_id } })
     res.send({
       msg: 'Post Deleted',
-      payload: req.params.comment_id,
+      payload: req.params.forum,
       status: 'Ok'
     })
   } catch (error) {
