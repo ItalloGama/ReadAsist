@@ -1,42 +1,42 @@
-const { Comment } = require('../models')
+const { Forum } = require('../models')
 
-const GetComments = async (req, res) => {
+const GetForum = async (req, res) => {
   try {
-    const comment = await Comment.findAll()
-    res.send(comment)
+    const forum = await Forum.findAll()
+    res.send(forum)
   } catch (error) {
     throw error
   }
 }
 
-const CreateComment = async (req, res) => {
+const CreateForum = async (req, res) => {
   try {
-    const comment = await Comment.create({
+    const forum = await Forum.create({
       ...req.body
     })
-    res.send(comment)
+    res.send(forum)
   } catch (error) {
     throw error
   }
 }
 
-const UpdateComment = async (req, res) => {
+const UpdateForum = async (req, res) => {
   try {
-    const comment = await Comment.update(
+    const forum = await Forum.update(
       { ...req.body },
       { where: { id: req.params.comment_id }, returning: true }
     )
-    res.send(comment)
+    res.send(forum)
   } catch (error) {
     throw error
   }
 }
 
-const DeleteComment = async (req, res) => {
+const DeleteForumPost = async (req, res) => {
   try {
-    await Comment.destroy({ where: { id: req.params.comment_id } })
+    await Forum.destroy({ where: { id: req.params.comment_id } })
     res.send({
-      msg: 'Comment Deleted',
+      msg: 'Post Deleted',
       payload: req.params.comment_id,
       status: 'Ok'
     })
@@ -46,8 +46,8 @@ const DeleteComment = async (req, res) => {
 }
 
 module.exports = {
-  CreateComment,
-  GetComments,
-  UpdateComment,
-  DeleteComment
+  CreateForum,
+  GetForum,
+  UpdateForum,
+  DeleteForumPost
 }
