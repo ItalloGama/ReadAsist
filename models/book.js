@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
   Book.init(
     {
       description: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false
       },
       img: DataTypes.STRING

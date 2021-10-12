@@ -20,11 +20,11 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false
       },
       tip: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false
       },
       img: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false
       },
   }, 
