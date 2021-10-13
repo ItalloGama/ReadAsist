@@ -13,7 +13,7 @@
 import axios from 'axios'
 import BookListCard from '../components/BookListCard'
 export default {
-  name: 'BookListCard',
+  name: 'BookList',
   components: {
     BookListCard
   },
