@@ -3,7 +3,9 @@
     <header>
       <Nav />
     </header>
-    <router-view/>
+    <div class="main">
+      <router-view/>
+    </div>
   </div>
 </template>
 
@@ -20,4 +22,7 @@ export default {
 </script>
 
 <style>
+.main{
+  padding-top: 5rem;
+}
 </style>
