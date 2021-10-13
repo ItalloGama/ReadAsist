@@ -1,11 +1,9 @@
 <template>
   <div>
-    <h2>PLEASE SELECT A MENU</h2>
-    <div>
+    <h2>HP Book List</h2>
       <div v-for="book in books" :key="book.id">
-        <BookListCard  />
+        <BookListCard  :book="book"/>
       </div>
-    </div>
   </div>
 </template>
 
@@ -13,21 +11,27 @@
 import axios from 'axios'
 import BookListCard from '../components/BookListCard'
 export default {
-  name: 'Menu',
+  name: 'BookListCard',
   components: {
     BookListCard
   },
   data: () => ({
     books: []
   }),
+  mounted: function () {
+    this.GetBook()
+  },
   methods: {
-    async GetBook(){
+    async GetBook (){
+      try {
       const res = await axios.get(
         'http://localhost:3001/book'
-      )
-      this.book = res.data
-      console.log(this.book)
-    }
+      ) 
+      this.books = res.data
+      } catch(error) {
+        console.log(error)
+      }
+    } 
   }
 }
 </script>
