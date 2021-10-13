@@ -3,22 +3,18 @@
     <header>
       <Nav />
     </header>
-    <br>
-    <div>
-      <BookList />
-    </div>
-    
+    <router-view/>
   </div>
 </template>
 
 <script>
-import BookList from './pages/BookList.vue'
+// import BookList from './pages/BookList.vue'
 import Nav from './components/Nav.vue'
 export default {
   name: 'App',
   components: {
     Nav,
-    BookList
+    // BookList
   }
 }
 </script>

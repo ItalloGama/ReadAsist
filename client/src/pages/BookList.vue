@@ -1,9 +1,11 @@
 <template>
   <div>
-    <h2>HP Book List</h2>
+    <div v-if="books.length > 0">
+      <h2>HP Book List</h2>
       <div v-for="book in books" :key="book.id">
         <BookListCard  :book="book"/>
       </div>
+    </div>
   </div>
 </template>
 

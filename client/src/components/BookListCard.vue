@@ -13,13 +13,12 @@
 <script>
 export default {
   name: 'BookListCard',
-  props: ['book'],
+  props: ['book']
   
-  mounted: function(){
-  this.getBook()
-}
 
 }
+
+
 
 </script>
 
