@@ -1,7 +1,7 @@
 import VueRouter from 'vue-router'
-import BookList from './components/Feed'
-import Tip from './components/Feed'
-import Forum from './components/Feed'
+import BookList from './pages/BookList.vue'
+import Tip from './pages/Tip.vue'
+import Forum from './pages/Forum.vue'
 
 
 const routes = [

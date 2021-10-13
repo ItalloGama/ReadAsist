@@ -1,27 +1,15 @@
 <template>
-  <header class="title">
-    <h3 class="user">Welcome to the best HP forum</h3>
-    <router-link to="/">Book List</router-link> |
-    <router-link to="/tip">tips</router-link> |
-    <router-link to="/Forum">Recipes</router-link> |
-
-  </header>
+  <div class="title">
+    <h3 class="head">Welcome to the best HP forum</h3>
+    <router-link to="/" name="bookList">Book List</router-link> | 
+    <router-link to="/tip" name="tip">tips</router-link> |
+    <router-link to="/forum" name="forum">Forum</router-link> |
+  </div>
 </template>
 
 <script>
 export default {
   name: 'Nav',
-  props: {
-    username: {
-      type: String,
-      required: true
-    }
-  },
-  methods: {
-    logOut() {
-      this.$emit('clearUser')
-    }
-  }
 }
 </script>
 
@@ -35,14 +23,7 @@ body{
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background: linear-gradient(45deg,
-        rgb(255, 253, 135),
-        rgb(201, 199, 110), 
-        rgb(219, 167, 248),
-        rgb(197, 90, 255), 
-        rgb(166, 0, 255)
-  );
-
+  background: blue;
   height: 4em;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
   position: fixed;
@@ -69,7 +50,7 @@ button:hover {
   opacity: 0.8;
 }
 
-.user{
-  color: rgb(166, 0, 255)
+.head{
+  color: white
 }
 </style>

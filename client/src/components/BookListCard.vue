@@ -10,8 +10,7 @@ export default {
   name: 'MenuItem',
   props: {
     name: String,
-    description: String,
-    price: Number
+    description: Text
   }
 }
 </script>
