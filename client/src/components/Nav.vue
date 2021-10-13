@@ -1,7 +1,10 @@
 <template>
   <header class="title">
-    <h3 class="user">{{ username }}</h3>
-    <button>Log Out</button>
+    <h3 class="user">Welcome to the best HP forum</h3>
+    <router-link to="/">Book List</router-link> |
+    <router-link to="/tip">tips</router-link> |
+    <router-link to="/Forum">Recipes</router-link> |
+
   </header>
 </template>
 
