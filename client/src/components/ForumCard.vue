@@ -4,9 +4,7 @@
     <div class="card-content">
       <div>
         <p>{{ forum.name }}</p>
-      </div>
-      <div>
-        <p>{{ forum.forum }}</p>
+        <p>{{ forum.note }}</p>
       </div>
     </div>
   </div>

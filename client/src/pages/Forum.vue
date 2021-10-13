@@ -9,7 +9,7 @@
         <textarea cols="50" 
         class="note" 
         name="note" 
-        type="note" 
+        type="text" 
         placeholder="Start writing here" 
         :value="input.note" 
         @change="handleChange"/>
@@ -24,20 +24,20 @@
 
 <script>
 import axios from 'axios'
-
+import ForumCard from '../components/ForumCard.vue'
 export default {
   name: 'Forum',
     components:{
-    
+    ForumCard
   },
-    data: ()=> ({
+    data: () => ({
     input: {
       name: '',
       note: ''
     },
     forums:[]
     }),
-mounted: function(){
+mounted: function() {
     this.getPosts()
   },
   methods: {
@@ -48,9 +48,9 @@ mounted: function(){
     async getPosts(){
       try {
         const res = await axios.get(
-          `http://localhost:3001/forum`
+          'http://localhost:3001/forum'
         )
-        this.posts = res.data
+        this.forums = res.data
       } catch (error) {
         console.log(error)
       }
