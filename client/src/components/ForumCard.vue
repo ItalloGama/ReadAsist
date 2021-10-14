@@ -6,6 +6,7 @@
         <p>{{ forum.name }}</p>
         <p>{{ forum.note }}</p>
         <button @click="deletePost(forum.id)">X</button>
+        <button @click="showForm">Update</button>
       </div>
     </div>
   </div>
@@ -15,6 +16,11 @@ import axios from 'axios'
 export default {
   name: 'ForumCard',
   props: ['forum'],
+  data: ()=>({
+    updateForm: false,
+    newName:'',
+    newNote:''
+  }),
   methods: {
     async deletePost(forumId){
       this.$router.go()
@@ -27,6 +33,20 @@ export default {
         console.log(error)
       }
     },
+    async updatePost(forumId){
+      this.$router.go()
+      try{
+      const res = await axios.put(
+        `http://localhost:3001/forum/${forumId}`
+        )
+      return res.data
+      } catch(error) {
+        console.log(error)
+      }
+    },
+    showForm(){
+      this.updateForm = true
+    }
   },
 }
   
