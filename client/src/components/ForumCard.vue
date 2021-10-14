@@ -3,26 +3,29 @@
   <div class="card">
     <div class="card-content">
       <div>
-        <p>{{ forum.name }}</p>
-        <p>{{ forum.note }}</p>
-        <form>
-          <input type="text" name="nameUpdate">
-          <input type="text" name="noteUpdate">
+        <p>{{ name }}</p>
+        <p>{{ note }}</p>
+        <form>  
+          <input placeholder="name" @input="handChangeName"/>
+          <input placeholder="content" @input="handleChangeNote"/>
+          <button @click.prevent="updateNote(id)">save</button>
         </form>
-        <button @click="deletePost(forum.id)">Delete</button>
-        <button @click="showForm">Update</button>
+        <button @click="deletePost(id)">Delete</button>
       </div>
     </div>
   </div>
 </template>
 <script>
 import axios from 'axios'
-import {updateForm} from '../services/forumServices'
+import {updatePost} from '../services/forumServices'
 export default {
   name: 'ForumCard',
-  props: ['forum'],
+  props: {
+    name:String,
+    note:String,
+    id: Number
+  },
   data: ()=>({
-    updateForm: false,
     newName:'',
     newNote:''
   }),
@@ -38,17 +41,24 @@ export default {
         console.log(error)
       }
     },
-    async updatePost(){
+    async updateNote(id){
+      this.$router.go()
     const data = {
       "name": this.newName,
       "note": this.newNote
-    }
-    const res = await updatePost(this.id, data)
-    console.log(res)
+      }
+        const res = await updatePost(id, data)
+        console.log(res)
     },
-    showForm(){
-      this.updateForm = true
-    }
+    handChangeName(e){
+      this.newName = e.target.value
+    },
+    handleChangeNote(e){
+      this.newNote = e.target.value
+    },
+    // showForm(){
+    //   this.updateForm = true
+    // }
   },
 }
   

@@ -18,7 +18,7 @@
       </form>
     <h3>Forum</h3>
     <div v-for="forum in forums" :key="forum.id" >
-    <ForumCard :forum="forum" />
+    <ForumCard :name="forum.name" :note="forum.note" :id="forum.id"/>
     </div>
   </div>
 </template>
@@ -70,7 +70,7 @@ mounted: function() {
         console.log(error)
       }
     },
-    
+
   },
         
   
