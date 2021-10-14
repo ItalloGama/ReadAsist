@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-if="tips.length > 0">
-      <h2>HP Book List</h2>
+      <h2>Top 10 reading tips</h2>
       <div v-for="tip in tips" :key="tip.id">
         <TipCard  :tip="tip"/>
       </div>
