@@ -5,7 +5,7 @@
       <div>
         <p>{{ forum.name }}</p>
         <p>{{ forum.note }}</p>
-        <button @click="deletePost">X</button>
+        <button @click="deletePost(forum.id)">X</button>
       </div>
     </div>
   </div>
@@ -16,10 +16,11 @@ export default {
   name: 'ForumCard',
   props: ['forum'],
   methods: {
-    async deletePost(forum_id){
+    async deletePost(forumId){
+      this.$router.go()
       try{
       const res = await axios.delete(
-        `http://localhost:3001/forum${forum_id}`
+        `http://localhost:3001/forum/${forumId}`
         )
       return res.data
       } catch(error) {
