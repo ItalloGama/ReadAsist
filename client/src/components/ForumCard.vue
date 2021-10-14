@@ -5,7 +5,11 @@
       <div>
         <p>{{ forum.name }}</p>
         <p>{{ forum.note }}</p>
-        <button @click="deletePost(forum.id)">X</button>
+        <form>
+          <input type="text" name="nameUpdate">
+          <input type="text" name="noteUpdate">
+        </form>
+        <button @click="deletePost(forum.id)">Delete</button>
         <button @click="showForm">Update</button>
       </div>
     </div>
