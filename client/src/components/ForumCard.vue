@@ -17,6 +17,7 @@
 </template>
 <script>
 import axios from 'axios'
+import {updateForm} from '../services/forumServices'
 export default {
   name: 'ForumCard',
   props: ['forum'],
@@ -37,16 +38,13 @@ export default {
         console.log(error)
       }
     },
-    async updatePost(forumId){
-      this.$router.go()
-      try{
-      const res = await axios.put(
-        `http://localhost:3001/forum/${forumId}`
-        )
-      return res.data
-      } catch(error) {
-        console.log(error)
-      }
+    async updatePost(){
+    const data = {
+      "name": this.newName,
+      "note": this.newNote
+    }
+    const res = await updatePost(this.id, data)
+    console.log(res)
     },
     showForm(){
       this.updateForm = true
