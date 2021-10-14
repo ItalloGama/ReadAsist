@@ -1,12 +1,13 @@
 <template>
   <div>
       <form @submit.prevent="submitPost">
-        <input name="name" 
+        <input 
+        name="name" 
         type="text" 
         placeholder="Name" 
         :value="input.name" 
         @change="handleChange"/>
-        <textarea cols="50" 
+        <textarea 
         class="note" 
         name="note" 
         type="text" 
@@ -54,7 +55,22 @@ mounted: function() {
       } catch (error) {
         console.log(error)
       }
-    }
+    },
+    async submitPost() {
+      const data = {
+        "name": this.input.name,
+        "note": this.input.note,
+      }
+      try{
+        const res = await axios.post(
+          'http://localhost:3001/forum', data
+        )
+        this.forums.push(res.data)
+      } catch(error){
+        console.log(error)
+      }
+    },
+    
   },
         
   

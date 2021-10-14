@@ -5,17 +5,30 @@
       <div>
         <p>{{ forum.name }}</p>
         <p>{{ forum.note }}</p>
+        <button @click="deletePost">X</button>
       </div>
     </div>
   </div>
 </template>
 <script>
+import axios from 'axios'
 export default {
   name: 'ForumCard',
-  props: ['forum']
-  
-
+  props: ['forum'],
+  methods: {
+    async deletePost(forum_id){
+      try{
+      const res = await axios.delete(
+        `http://localhost:3001/forum${forum_id}`
+        )
+      return res.data
+      } catch(error) {
+        console.log(error)
+      }
+    },
+  },
 }
+  
 
 
 
