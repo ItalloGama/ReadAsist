@@ -33,6 +33,13 @@
 
 ![Tips](./screenshots/tips.png)
 
+> ## _Future Updates_
+- Implement user function
+- Add notes to books
+- Add notes and practices with tips
+- implement auth
+
+
 > ## _Credits_
 
 - [Stack Overflow](https://stackoverflow.com/)
