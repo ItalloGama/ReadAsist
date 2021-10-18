@@ -10,13 +10,13 @@
 </template>
 
 <script>
-// import BookList from './pages/BookList.vue'
+
 import Nav from './components/Nav.vue'
 export default {
   name: 'App',
   components: {
     Nav,
-    // BookList
+
   }
 }
 </script>
