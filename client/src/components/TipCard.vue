@@ -2,7 +2,10 @@
   <div class="card">
     <div class="card-content">
       <div>
-        <img :src="tip.img" />
+        <img :src="tip.img"
+        contain
+        height="100px"
+        width="100px" />
       </div>
       <div>
         <p>{{ tip.tip }}</p>

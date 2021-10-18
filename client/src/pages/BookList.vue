@@ -12,6 +12,7 @@
 <script>
 import axios from 'axios'
 import BookListCard from '../components/BookListCard'
+
 export default {
   name: 'BookList',
   components: {
@@ -24,7 +25,7 @@ export default {
     this.GetBook()
   },
   methods: {
-    async GetBook (){
+    async GetBook (){ 
       try {
       const res = await axios.get(
         'http://localhost:3001/book'
