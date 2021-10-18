@@ -57,14 +57,14 @@ module.exports = {
         {
           tipName: 'Use a Marker',
           tip: 'Do you find your vision slipping and sliding through the page as you read? Not a problem. Simply place an index card below each line, and slip it down as you read. This will ensure you stay at reading one line at a time, rather than flitting your eyes about and taking nothing in.',
-          img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fdesktime.com%2Fblog%2Fcan-reading-make-you-more-productive%2F&psig=AOvVaw2AX6bULC9WBRoyPGrp85no&ust=1634070297934000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKiG3bCYw_MCFQAAAAAdAAAAABAO',
+          img: 'https://images.unsplash.com/photo-1573946117500-8e03742a2fff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=857&q=80',
           createdAt: new Date(),
           updatedAt: new Date()
         },
         {
           tipName: 'Work on Improving Your Vocabulary',
           tip: 'Think about it: You’re reading along, and then you run into a word you don’t know. Do you skip it? Do you try to figure it out by context? Do you stop to look it up? Whichever course of action you take, you are slowing your time significantly, if not stopping it all together to go and look up the retarding word.',
-          img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fdesktime.com%2Fblog%2Fcan-reading-make-you-more-productive%2F&psig=AOvVaw2AX6bULC9WBRoyPGrp85no&ust=1634070297934000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKiG3bCYw_MCFQAAAAAdAAAAABAO',
+          img: 'https://images.unsplash.com/photo-1626428702485-397c8a479e36?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80',
           createdAt: new Date(),
           updatedAt: new Date()
         },
