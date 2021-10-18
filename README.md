@@ -4,7 +4,7 @@
 
 #### 10/18/2021
 
- [ GitHub](https://github.com/ItalloGama) | [ LinkedIn](https://www.linkedin.com/in/itallo-gama/)|
+ [ GitHub](https://github.com/ItalloGama) | [ LinkedIn](https://www.linkedin.com/in/itallo-gama/)|  [Trello](https://trello.com/b/elmBQePs/readasist)
 
 > ## Getting Started
 
