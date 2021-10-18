@@ -43,14 +43,14 @@ module.exports = {
         {
           tipName: 'Read MORE!',
           tip: 'The old adage, “Practice makes perfect,” is actually pretty darn accurate. Any professional, artist, musician, etc. practices their work regularly.',
-          img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fdesktime.com%2Fblog%2Fcan-reading-make-you-more-productive%2F&psig=AOvVaw2AX6bULC9WBRoyPGrp85no&ust=1634070297934000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKiG3bCYw_MCFQAAAAAdAAAAABAO',
+          img: 'https://images.unsplash.com/photo-1604404895906-1cba0f221e14?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80',
           createdAt: new Date(),
           updatedAt: new Date()
         },
         {
           tipName: 'Set a Goal.',
           tip: 'Holding yourself accountable will better ensure you stick with your reading and your timer tests. Give yourself a goal of a certain number of pages to read each day/week/etc., and stick to it. When you reach it, treat yourself. Incentive never hurt anyone!',
-          img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fdesktime.com%2Fblog%2Fcan-reading-make-you-more-productive%2F&psig=AOvVaw2AX6bULC9WBRoyPGrp85no&ust=1634070297934000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKiG3bCYw_MCFQAAAAAdAAAAABAO',
+          img: 'https://images.unsplash.com/photo-1497169132349-e201761db064?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=904&q=80',
           createdAt: new Date(),
           updatedAt: new Date()
         },
