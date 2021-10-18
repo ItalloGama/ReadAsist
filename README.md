@@ -27,11 +27,11 @@
 > ## _Screenshots_
 >
 > 
-![Screenshots](n/a)
+![Books](./screenshots/books.png)
 
-![Screenshots](n/a)
+![Forum](./screenshots/forum.png)
 
-![Screenshots](n/a)
+![Tips](./screenshots/tips.png)
 
 > ## _Credits_
 
