@@ -56,9 +56,6 @@ export default {
     handleChangeNote(e){
       this.newNote = e.target.value
     },
-    // showForm(){
-    //   this.updateForm = true
-    // }
   },
 }
   
