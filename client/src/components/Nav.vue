@@ -1,9 +1,9 @@
 <template>
   <div class="title">
     <h3 class="head">Welcome to the best HP forum</h3>
-    <router-link to="/" name="bookList">Book List</router-link> | 
-    <router-link to="/tip" name="tip">tips</router-link> |
-    <router-link to="/forum" name="forum">Forum</router-link> |
+    <router-link to="/" name="bookList" class="link">Book List</router-link> | 
+    <router-link to="/tip" name="tip" class="link">tips</router-link> |
+    <router-link to="/forum" name="forum" class="link">Forum</router-link> |
   </div>
 </template>
 
@@ -23,7 +23,7 @@ body{
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background: blue;
+  background: maroon;
   height: 4em;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
   position: fixed;
@@ -51,6 +51,9 @@ button:hover {
 }
 
 .head{
+  color: white
+}
+.link {
   color: white
 }
 </style>
