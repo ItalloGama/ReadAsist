@@ -5,7 +5,6 @@ import Forum from './pages/Forum.vue'
 
 
 const routes = [
-    // {path:"/", component:Login, name:'Login'},
     {path:"/", component:BookList, name:'BookList'},
     {path:"/forum", component:Forum, name:'Forum'},
     {path:"/tip", component:Tip, name:'Tip'}

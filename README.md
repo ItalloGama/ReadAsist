@@ -1,4 +1,4 @@
-> # **_ReadAsist_**
+> # **_HP Forums_**
 
 #### By: Itallo Gama
 
@@ -8,7 +8,9 @@
 
 > ## Getting Started
 
-TBD
+- Clone down the repository
+- Use "npm start serve" to start the front-end
+- Use "npm run dev" to start the back-end
 
 > ## _Technologies used_
 
@@ -19,7 +21,7 @@ TBD
 
 > # _Details_
 
- **_ReadAsist_** is a site designed for beginner to avid readers alike. To help keep the reader on track when it comes to charaters, plotlines and just about anything else. the user will be able to have more than one book active at a time. and hold **_notes_** for each book being currently used.
+ **_HP Forums_** 
 
 ### Client Details
 
